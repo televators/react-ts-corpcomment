@@ -88,6 +88,11 @@ body {
   display: none;
 }
 
+::selection {
+	background: hsl(266.7, 100%, 85.9%);
+	color: #000;
+}
+
 /* APP */
 .app {
   position: relative;

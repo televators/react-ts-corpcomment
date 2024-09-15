@@ -9,9 +9,9 @@ const tempTags = [
 const HashtagList = () => {
   return (
     <ul className="hashtags">
-      { tempTags.map( tag => {
+      { tempTags.map( ( tag ) => {
         return (
-          <li>
+          <li key={ tag.replace( ' ', '' ).toLowerCase() }>
             <button>#{ tag.replace( ' ', '' ) }</button>
           </li>
         );

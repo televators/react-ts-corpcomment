@@ -359,6 +359,7 @@ form button span::selection {
 
 .feedback--expand > div:nth-child(3) > p:last-child {
   -webkit-line-clamp: initial !important;
+  line-clamp: initial !important;
   -webkit-box-orient: initial !important;
   overflow: initial !important;
 }

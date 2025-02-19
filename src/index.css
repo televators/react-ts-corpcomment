@@ -338,6 +338,28 @@ form button span::selection {
   background-color: #787c80;
 }
 
+.feedback-list--empty {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+.feedback-list__no-data-message {
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  background-color: #695390;
+  border-radius: 5px;
+  box-shadow: 0 5px 11px -3px #afafaf;
+}
+
+.feedback-list__loading-spinner {
+  display: flex;
+}
+
 /* FEEDBACK ITEM */
 .feedback {
   display: grid;

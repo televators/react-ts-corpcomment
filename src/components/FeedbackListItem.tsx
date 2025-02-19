@@ -1,14 +1,15 @@
 import { TriangleUpIcon } from "@radix-ui/react-icons";
 import { FeedbackItemProps } from "../types/types";
+import React from "react";
 
-const FeedbackListItem = ( { feedbackItem }: FeedbackItemProps ) => {
+const FeedbackListItem = ( { feedbackItem, cssIndex }: FeedbackItemProps ) => {
   const badgeLetter =
     ( ! feedbackItem.badgeLetter || feedbackItem.badgeLetter.length < 1 )
       ? feedbackItem.company[0]
       : feedbackItem.badgeLetter;
 
   return (
-    <li className="feedback">
+    <li className="feedback" style={{ '--index': `${ cssIndex }` } as React.CSSProperties}>
       <button>
         <TriangleUpIcon />
         <span>{ feedbackItem.upvoteCount }</span>

@@ -56,8 +56,8 @@ const FeedbackList = () => {
         />
       ) : (
         <>
-          { feedbackItems && feedbackItems.map( ( feedbackItem ) => (
-            <FeedbackListItem key={ feedbackItem.id } feedbackItem={ feedbackItem } />
+          { feedbackItems && feedbackItems.map( ( feedbackItem, index ) => (
+            <FeedbackListItem key={ feedbackItem.id } feedbackItem={ feedbackItem } cssIndex={ index } />
           ) ) }
           { ! feedbackItems && (
             <h4 className="feedback-list__no-data-message">No feedback yet. Submit one above!</h4>

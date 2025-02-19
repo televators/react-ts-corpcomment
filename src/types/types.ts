@@ -9,4 +9,5 @@ export type FeedbackItem = {
 
 export type FeedbackItemProps = {
   feedbackItem: FeedbackItem;
+  cssIndex: number;
 };

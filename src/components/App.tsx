@@ -5,6 +5,8 @@ import HashtagList from "./HashtagList";
 function App() {
   return (
     <div className="app">
+      <div className="--animate-bg"></div>
+
       <Container />
 
       <HashtagList />

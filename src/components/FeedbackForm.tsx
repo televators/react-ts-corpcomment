@@ -3,8 +3,8 @@ import { MAX_CHAR_COUNT } from "../lib/constants";
 
 const FeedbackForm = () => {
   const [text, setText] = useState( '' );
-  const characterCount = MAX_CHAR_COUNT - text.length;
-  const handleChange = ( event: React.ChangeEvent<HTMLTextAreaElement> ) => {
+  const characterCount  = MAX_CHAR_COUNT - text.length;
+  const handleChange    = ( event: React.ChangeEvent<HTMLTextAreaElement> ) => {
     if ( event.target.value.length > MAX_CHAR_COUNT ) return;
 
     setText( event.target.value );

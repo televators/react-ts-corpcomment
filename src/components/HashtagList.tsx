@@ -12,7 +12,9 @@ const HashtagList = () => {
       { tempTags.map( ( tag ) => {
         return (
           <li key={ tag.replace( ' ', '' ).toLowerCase() }>
-            <button>#{ tag.replace( ' ', '' ) }</button>
+            <button>
+              <span>#{ tag.replace( ' ', '' ) }</span>
+            </button>
           </li>
         );
       } ) }

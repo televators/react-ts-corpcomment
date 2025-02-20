@@ -1,4 +1,4 @@
-import { TriangleUpIcon } from "@radix-ui/react-icons";
+// import { TriangleUpIcon } from "@radix-ui/react-icons";
 import { FeedbackItemProps } from "../types/types";
 import React from "react";
 
@@ -11,7 +11,7 @@ const FeedbackListItem = ( { feedbackItem, cssIndex }: FeedbackItemProps ) => {
   return (
     <li className="feedback" style={{ '--index': `${ cssIndex }` } as React.CSSProperties}>
       <button>
-        <TriangleUpIcon />
+        <div className="icon--triangle"></div>
         <span>{ feedbackItem.upvoteCount }</span>
       </button>
 
